@@ -70,25 +70,35 @@
       </nav>
     </header>
     <div class="popup">
-      <img class="popup-img" src="./popup.png" height="100%" width="100%">
+      <img class="popup-img" src="./popup.png" height="100%" width="100%" />
       <div class="close-btn">
         <button id="close-btn">X</button>
       </div>
     </div>
     <section class="home">
-      <div class="img-slider-wrapper">
+      <div class="image-slider-wrapper">
         <div class="slider">
-          <img src="./img1.jpg" id="slide1" class="active">
-          <img src="./img2.jpg" id="slide2">
-          <img src="./img3.jpg" id="slide3">
-          <img src="./img4.jpg" id="slide4">
+          <img src="./img1.jpg" id="slide1" />
+          <img src="./img2.jpg" id="slide2" />
+          <img src="./img3.jpg" id="slide3" />
+          <img src="./img4.jpg" id="slide4" />
         </div>
-        <div class="slider-btns">
-          <a href="#slide1" class="nav-links active"></a>
-          <a href="#slide2" class="nav-links"></a>
-          <a href="#slide3" class="nav-links"></a>
-          <a href="#slide4" class="nav-links"></a>
+        <div class="nav-btns">
+          <button class="nav-btn active" id="1"></button>
+          <button class="nav-btn" id="2"></button>
+          <button class="nav-btn" id="3"></button>
+          <button class="nav-btn" id="4"></button>
         </div>
+        <div class="direction-btn left"></div>
+        <div class="direction-btn right"></div>
+      </div>
+    </section>
+    <section class="details">
+      <div class="school-quote">
+        <h1 class="quote"></h1>
+      </div>
+      <div class="school-img">
+        <!-- <img src="./school.jpg" class="schoolImage"> -->
       </div>
     </section>
     <script src="index.js"></script>

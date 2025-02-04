@@ -1,7 +1,7 @@
 const logo = document.querySelector(".logo");
 const closeBtn = document.getElementById("close-btn");
+const navBtnContainer = document.querySelector(".nav-btns");
 const popup = document.querySelector('.popup');
-const navLinks = document.querySelectorAll('.nav-links');
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 20) {
@@ -16,17 +16,19 @@ closeBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('click', (e) => {
-    if (!popup.contains(e.target)) { 
+    if (!popup.contains(e.target)) {
         popup.style.display = 'none';
     }
 });
 
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e)=>{
-        const activeDot = document.querySelector('.slider-btns .active');
-        const targetDot = e.target;
-        activeDot.classList.remove('active');
-        targetDot.classList.add('active');
-    });
+navBtnContainer.addEventListener("click", (e) => {
+    const targetId = "slide" + e.target.id;
+    const activeBtn = navBtnContainer.querySelector(".active");
+    const targetBtn = document.getElementById(e.target.id);
+    const targetSlde = document.getElementById(targetId);
+    if (targetSlde) {
+        targetSlde.scrollIntoView({ behavior: "smooth", inline: "start" });
+    }
+    activeBtn.classList.remove("active");
+    targetBtn.classList.add("active");
 });
