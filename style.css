@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    color: #fff;
+    font-family: "Funnel Display";
+    overscroll-behavior: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    padding: 15px 30px;
+    background: rgb(41, 131, 31);
+    width: 100%;
+    z-index: 9;
+}
+
+svg{
+    fill: #eef;
+}
+
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.ph-number, .e-mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-nav *{
+    font-size: .87rem;
+    letter-spacing: .8px;
+}
+nav a{
+    font-size: 18px;
+}
+.links, .main-links{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.links ul, .main-links ul{
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.links li, .main-links li{
+    list-style: none;
+    height: 100%;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.links a, .main-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo{
+    margin-top: 20px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+}
+
+.logo h1{
+    font-size: 24px;
+    transition: all .6s;
+}
+
+.logo.scrolled h1{
+    font-size: 20px;
+}
+
+.logo.scrolled{
+    height: 50px;
+}
+
+.logo-img{
+    height: 100%;
+}
+
+.popup{
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    padding-top: 5px;
+    background: #000;
+    animation: move 1.5s ease-out forwards;
+}
+
+.popup-img{
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    z-index: 11;
+    top: 5px;
+    right: 10px;
+    width: 15px;
+    background: #000;
+    display: grid;
+    place-items: center;
+}
+
+#close-btn{
+    color: #fff;
+    height: 15px;
+    background: #000;
+    border: none;
+}
+
+@keyframes move {
+    100%{
+        top: 0;
+    }
+}
+@media only screen and (max-width: 1080px){
+    header ul li{
+        display: none;
+    }
+
+    .top-nav{
+        justify-content: center;
+    }
+}
+
+.home{
+    height: calc(100vh - 163px);
+    position: relative;
+    top: 160px;
+}
+
+.img-slider-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.slider{
+    aspect-ratio: 16 / 6.2;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-btns{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    column-gap: 20px;
+}
+
+.slider-btns a{
+    height: 10px;
+    aspect-ratio: 1 /1;
+    border-radius: 100vh;
+    border: 2px solid #fff;
+    transition: all .2s;
+}
+
+.slider-btns a:hover{
+    background: #fff;
+}
+
+.slider-btns a.active{
+    background: #fff;
+}
+
