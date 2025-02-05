@@ -1,3 +1,4 @@
+
 const logo = document.querySelector(".logo");
 const closeBtn = document.getElementById("close-btn");
 const hamburger = document.getElementById("hamburger");
