@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html,
@@ -61,15 +62,18 @@ nav a {
 .links,
 .main-links {
     height: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .links ul,
 .main-links ul {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -79,6 +83,11 @@ nav a {
     height: 100%;
     color: #fff;
     padding: 0 10px;
+}
+
+.ham-burger{
+    display: none;
+    margin-left: auto;
 }
 
 .links a,
@@ -162,15 +171,8 @@ nav a {
     }
 }
 
-@media only screen and (max-width: 1080px) {
-    header ul li {
-        display: none;
-    }
 
-    .top-nav {
-        justify-content: center;
-    }
-}
+/* Slider section */
 
 .home {
     height: 100vh;
@@ -178,20 +180,26 @@ nav a {
 
 .image-slider-wrapper {
     position: relative;
-    top: 180px;
+    width: 100%;
+    top: 174px;
 }
 
 .slider {
-    aspect-ratio: 16 / 6.2;
+    aspect-ratio: 9 / 4;
+    min-width: 100%;
     display: flex;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    height: calc(100vh - 168px);
+    max-width: 100%;
 }
 
 .slider img {
     flex: 1 0 100%;
+    max-height: 100%;
     scroll-snap-align: start;
+    margin-top: auto;
     object-fit: cover;
 }
 
@@ -205,7 +213,7 @@ nav a {
 }
 
 .nav-btn {
-    padding: 5px;
+    padding: 2px;
     border: none;
     background: rgba(225, 225, 225, 0.4);
     border: 2px solid #fff;
@@ -215,11 +223,95 @@ nav a {
 }
 
 .nav-btn.active {
-    scale: 1.3;
+    scale: 1.5;
     background: #fff;
 }
 
 .nav-btn.active+.nav-btn,
 .nav-btn:has(+ .nav-btn.active) {
-    scale: 1.1;
+    scale: 1.2;
+}
+
+.details{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 100px;
+}
+
+.school-quote, .school-img{
+    flex: 1 1 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.quote{
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 46px;
+    background: linear-gradient(to right, rgb(47, 93, 49), rgb(67, 170, 11), rgb(47, 93, 49));
+    color: transparent;
+    background-clip: text;
+}
+
+.message{
+    width: 50%;
+    color: #220;
+    font-size: 24px;
+}
+
+.school-img img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1220px){
+    .home{
+        margin-bottom: 50px;
+    }
+
+    .details{
+        gap: 40px;
+    }
+
+    .quote, .message{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    } 
+
+    .main-links ul{
+        padding: 0 10px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    .logo{
+        scale: .8;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul li{
+        display: none;
+    }    
+    .ham-burger{
+        display: block;
+    }
 }
