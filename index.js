@@ -1,4 +1,5 @@
-
+let hamBurgerBtn = document.querySelector(".ham-burger-button.open");
+let hamBurgerMenu = document.querySelector(".ham-burger-menu");
 const logo = document.querySelector(".logo");
 const closeBtn = document.getElementById("close-btn");
 const hamburger = document.getElementById("hamburger");
@@ -30,20 +31,35 @@ window.addEventListener('click', (e) => {
 
 
 navBtnContainer.addEventListener("click", (e) => {
-    if(!e.target.closest('button')) return;
+    if (!e.target.closest('button')) return;
     const targetId = "slide" + e.target.id;
     const activeBtn = navBtnContainer.querySelector(".active");
     const targetBtn = document.getElementById(e.target.id);
     const targetSlide = document.getElementById(targetId);
     if (targetSlide) {
-        targetSlide.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest"});
+        targetSlide.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
     }
     activeBtn.classList.remove("active");
     targetBtn.classList.add("active");
 });
 
 
-hamburger.addEventListener("click", () => {
-    mainLinks.classList.toggle("active"); 
+hamBurgerBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    hamBurgerMenu.classList.toggle("active");
+});
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 520) {
+        hideHamBurger();
+    }
 });
 
+window.addEventListener('click', () => {
+    if(hamBurgerMenu.classList.contains('active')){
+        hideHamBurger();
+    }
+});
+
+function hideHamBurger(){
+    hamBurgerMenu.classList.remove("active");
+}
