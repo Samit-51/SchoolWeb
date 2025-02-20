@@ -115,7 +115,7 @@ nav a {
     right: 0;
     transition: all 0.5s;
     z-index: 3;
-    transform: translateX(50vw);
+    transform: translateX(100vw);
     background: #242424;
     border-radius: 20px 0 0 20px;
     overflow-y: auto;
