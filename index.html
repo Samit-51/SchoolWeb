@@ -1,133 +1,239 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>School Webiste Template</title>
-  </head>
-  <body>
-    <header>
-      <nav class="top-nav">
-        <div class="contacts">
-          <div class="ph-number">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="18px"
-              viewBox="0 -960 960 960"
-              width="18px"
-              fill="#000"
-            >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>School Webiste Template</title>
+</head>
+
+<body>
+  <header>
+    <nav class="top-nav">
+      <div class="contacts">
+        <div class="ph-number">
+          <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#000">
+            <path
+              d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+          </svg>
+          <span class="phoneNumber1">061-111111</span>|
+          <span class="phoneNumber2">222222</span> |
+          <span class="phoneNumber3">333333</span>
+        </div>
+        <div class="e-mail">
+          <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#000">
+            <path
+              d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+          </svg>
+          <span class="eMail">example123@gmail.com</span>
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li>Gallery</li>
+          <li><a href="#">Entrance Form</a></li>
+          <li><a href="#">Magazine </a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Results</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="main-nav">
+      <div class="logo">
+        <img src="logo.png" class="logo-img" />
+        <h1>GOLDEN RIBBION <br />SCHOOLS</h1>
+      </div>
+      <div class="main-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="#">News and Notice</a></li>
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li class="ham-burger"><button class="ham-burger-button open"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg></button></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="ham-burger-menu">
+      <ul>
+        <li><button class="ham-burger-button close" onclick=hideHamburger()><svg xmlns="http://www.w3.org/2000/svg"
+              height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
               <path
-                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
-              />
-            </svg>
-            <span class="phoneNumber1">061-111111</span>|
-            <span class="phoneNumber2">222222</span> |
-            <span class="phoneNumber3">333333</span>
-          </div>
-          <div class="e-mail">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="18px"
-              viewBox="0 -960 960 960"
-              width="18px"
-              fill="#000"
-            >
-              <path
-                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
-              />
-            </svg>
-            <span class="eMail">example123@gmail.com</span>
-          </div>
-        </div>
-        <div class="links">
-          <ul>
-            <li>Gallery</li>
-            <li><a href="#">Entrance Form</a></li>
-            <li><a href="#">Magazine </a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Results</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="main-nav">
-        <div class="logo">
-          <img src="logo.png" class="logo-img" />
-          <h1>GOLDEN RIBBION <br />SCHOOLS</h1>
-        </div>
-        <div class="main-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Admission</a></li>
-            <li><a href="#">News and Notice</a></li>
-            <li><a href="#">Our Blog</a></li>
-            <li><a href="#">Our services</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li class="ham-burger"><button class="ham-burger-button open"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button></li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="ham-burger-menu">
-          <ul>
-            <li><button class="ham-burger-button close" onclick=hideHamburger()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button></li>
-            <li><a href="#" style="--i: 1">Entrance Form</a></li>
-            <li><a href="#" style="--i: 2">Magazine </a></li>
-            <li><a href="#" style="--i: 3">Events</a></li>
-            <li><a href="#" style="--i: 4">Results</a></li>
-            <li><a href="#" style="--i: 5">Home</a></li>
-            <li><a href="#" style="--i: 6">About us</a></li>
-            <li><a href="#" style="--i: 5">Admission</a></li>
-            <li><a href="#" style="--i: 4">News and Notice</a></li>
-            <li><a href="#" style="--i: 3">Our Blog</a></li>
-            <li><a href="#" style="--i: 2">Our services</a></li>
-            <li><a href="#" style="--i: 1">Contact us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div class="popup">
-      <img class="popup-img" src="./popup.png" height="100%" width="100%" />
-      <div class="close-btn">
-        <button id="close-btn">X</button>
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></button></li>
+        <li><a href="#" style="--i: 1">Entrance Form</a></li>
+        <li><a href="#" style="--i: 2">Magazine </a></li>
+        <li><a href="#" style="--i: 3">Events</a></li>
+        <li><a href="#" style="--i: 4">Results</a></li>
+        <li><a href="#" style="--i: 5">Home</a></li>
+        <li><a href="#" style="--i: 6">About us</a></li>
+        <li><a href="#" style="--i: 5">Admission</a></li>
+        <li><a href="#" style="--i: 4">News and Notice</a></li>
+        <li><a href="#" style="--i: 3">Our Blog</a></li>
+        <li><a href="#" style="--i: 2">Our services</a></li>
+        <li><a href="#" style="--i: 1">Contact us</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="popup">
+    <img class="popup-img" src="./popup.png" height="100%" width="100%" />
+    <div class="close-btn">
+      <button id="close-btn">X</button>
+    </div>
+  </div>
+  <section class="home">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide" id="slide1">Slide 1</div>
+        <div class="slide" id="slide2">Slide 2</div>
+        <div class="slide" id="slide3">Slide 3</div>
+        <div class="slide" id="slide4"><img src="./img1.jpg"></div>
+        <div class="slide" id="slide5"><img src="./img2.jpg"></div>
+        <div class="slide" id="slide6"><img src="./img3.jpg"></div>
+      </div>
+      <div class="buttons">
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+      </div>
+      <div class="nav-btns">
+        <button class="nav-btn active" id="1"></button>
+        <button class="nav-btn" id="2"></button>
+        <button class="nav-btn" id="3"></button>
+        <button class="nav-btn" id="4"></button>
+        <button class="nav-btn" id="5"></button>
+        <button class="nav-btn" id="6"></button>
       </div>
     </div>
-    <section class="home">
-      <div class="image-slider-wrapper">
-        <div class="slider">
-          <img src="./img1.jpg" id="slide1">
-          <img src="./img2.jpg" id="slide2">
-          <img src="./img3.jpg" id="slide3">
-          <img src="./img4.jpg" id="slide4">
-        </div>
-        <div class="nav-btns">
-          <button class="nav-btn active" id="1"></button>
-          <button class="nav-btn" id="2"></button>
-          <button class="nav-btn" id="3"></button>
-          <button class="nav-btn" id="4"></button>
-        </div>
+  </section>
+
+  <section class="details">
+    <div class="school-quote">
+      <h1 class="quote">
+        “Education for Discipline and Excellence”
+      </h1>
+      <p class="message">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quae provident accusamus ipsum, vitae aliquam
+        dignissimos consectetur doloremque saepe dolore, pariatur asperiores eveniet aut repellat?
+      </p>
+    </div>
+    <div class="school-img">
+      <img src="./school.jpg" class="schoolImage">
+    </div>
+  </section>
+  <section class="message-section">
+    <h2>What Our Principal Says</h2>
+    <div class="message-container">
+      <div class="left">
+        <img src="principal-image.jpg" alt="Principal">
       </div>
-    </section>
-    <section class="details">
-      <div class="school-quote">
-        <h1 class="quote">
-          “Education for Discipline and Excellence”
-        </h1>
+      <div class="right">
         <p class="message">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quae provident accusamus ipsum, vitae aliquam dignissimos consectetur doloremque saepe dolore, pariatur asperiores eveniet aut repellat?
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus magnam nobis minima odit maxime, sit
+          aspernatur amet doloribus odio harum voluptatibus fugit officia quas iure ipsa omnis similique at."
         </p>
+        <div class="bottom">
+          <p class="name">XYZ ABC</p>
+          <p class="post">-Principle</p>
+        </div>
       </div>
-      <div class="school-img">
-        <img src="./school.jpg" class="schoolImage">
+    </div>
+  </section>
+  <section class="features">
+    <div class="stats-container">
+      <div class="stat-box">
+        <i class="fas fa-users"></i>
+        <div class="stat-number">280k+</div>
+        <div class="stat-text">Our Happy Students</div>
       </div>
-    </section>
-    <section class="plus2-section">
-      <div class="image">
-        <img src="./image.jpg">
-      </div>    
-    </section>
-    <script src="index.js"></script>
-  </body>
+      <div class="stat-box">
+        <i class="fas fa-graduation-cap"></i>
+        <div class="stat-number">15+</div>
+        <div class="stat-text">Teaching Years</div>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <div class="stat-number">20+</div>
+        <div class="stat-text">Expert Instructor</div>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-star"></i>
+        <div class="stat-number">98%</div>
+        <div class="stat-text">Satisfaction Rate</div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h3>PPEB School</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <h4>Address</h4>
+        <p>Thapathana, Parbhat</p>
+        <h4>Call Us</h4>
+        <p>01-7878787<br>01-7979797</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Computer Lab</li>
+          <li>Cafeteria</li>
+          <li>Transportation</li>
+          <li>Sports</li>
+          <li>Use of Internet</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Our Programmes</h3>
+        <ul>
+          <li>Secondary School</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li>Principal's Message</li>
+          <li>Executive Board</li>
+          <li>Admission Procedure</li>
+          <li>Scholarships and Awards</li>
+          <li>Achievements</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Email Us</h3>
+        <p>info@pgpeb.edu.np</p>
+      </div>
+
+      <div class="footer-section contact-form">
+        <h3>Tell Us what you think</h3>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
