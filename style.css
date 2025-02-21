@@ -14,10 +14,7 @@ body {
     color: #fff;
     font-family: "Funnel Display";
     overscroll-behavior: none;
-}
-
-body {
-    position: relative;
+    overflow-x: hidden;
 }
 
 header {
@@ -251,6 +248,10 @@ section {
 
 /* Slider section */
 
+.home{
+    height: fit-content;
+}
+
 .slider-container {
     width: 100%;
     height: calc(100vh - 165px);
@@ -355,12 +356,14 @@ section {
     scale: 1.2;
 }
 
+/* Details about school */
+
 .details {
-    min-height: 100vh;
-    height: fit-content;
+    height: 100vh;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     padding: 2rem clamp(1rem, 10vw, 3.25rem);
 }
 
@@ -373,11 +376,12 @@ section {
     justify-content: center;
     gap: 20px;
     text-align: left;
+    height: fit-content;
 }
 
 .quote {
     text-transform: capitalize;
-    font-size: clamp(1.25rem, 5vw, 3rem);
+    font-size: clamp(1.675rem, 8vw, 3rem);
     padding: clamp(1rem, 10vw, 2rem);
     background: linear-gradient(to right, rgb(47, 93, 49), rgb(67, 170, 11), rgb(47, 93, 49));
     color: transparent;
@@ -387,19 +391,18 @@ section {
 .message {
     color: #220;
     font-size: 24px;
+    font-size: clamp(0.625rem, 5vw, 2.25rem);
 }
 
 .school-img img {
     max-width: 100%;
     max-height: 500px;
-    height: auto;
     object-fit: cover;
     border-radius: 20px;
 }
 
 .message-section {
-    min-height: 100vh;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,13 +410,13 @@ section {
     flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
-    background-color: #f0fff0;
+    background-color: #efe;
     border-radius: 10px;
     text-align: center;
 }
 
-.message-section h2 {
-    font-size: 28px;
+.message-section h1 {
+    font-size: clamp(1.25rem, 8vw, 3.25rem);
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
@@ -443,9 +446,7 @@ section {
 }
 
 .message-container .right {
-    flex: 2;
-    min-width: 300px;
-    max-width: 600px;
+    flex: 2 2 600px;
     padding: 20px;
     background: white;
     border-radius: 10px;
@@ -475,16 +476,11 @@ section {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 200px;
     margin: 10px;
 }
 
@@ -526,35 +522,6 @@ section {
     text-decoration: none;
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: none;
-    background: #a4e6a4;
-}
-
-.contact-form button {
-    background: white;
-    color: #026b1a;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.contact-form button:hover {
-    background: #ccc;
-}
-
 .features {
     min-height: 50vh;
     height: fit-content;
@@ -564,6 +531,11 @@ section {
     align-items: center;
     justify-content: center;
     color: #222;
+    padding: 2rem clamp(2rem, 7vw, 3rem);
+}
+
+.features h1{
+    font-size: clamp(1.25rem, 8vw, 4rem);
 }
 
 .features i {
@@ -609,22 +581,6 @@ section {
 }
 
 /* Responsive Styles */
-
-@media only screen and (max-width: 1220px) {
-    .home {
-        margin-bottom: 50px;
-    }
-
-    .details {
-        gap: 40px;
-    }
-
-    .quote,
-    .message {
-        width: 60%;
-    }
-}
-
 @media only screen and (max-width: 1080px) {
     .top-nav {
         flex-direction: column;
@@ -649,19 +605,13 @@ section {
     .slider-container {
         height: 68vh;
     }
+
+    .message-section{
+        height: fit-content;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .message {
-        width: 80%;
-        font-size: 20px;
-    }
-
-    .quote {
-        width: 80%;
-        font-size: 26px;
-    }
-
     nav ul li {
         display: none;
     }
@@ -670,13 +620,8 @@ section {
         display: block;
     }
 
-    .message-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .message-container .right {
-        max-width: 100%;
+    .details{
+        height: fit-content;
     }
 
     .slider-container {
@@ -685,17 +630,6 @@ section {
 
     .slide {
         font-size: 2.5rem;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%;
-        max-width: 400px;
     }
 }
 
