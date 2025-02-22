@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    min-height: 100vh;
+    height: fit-content;
+    color: #fff;
+    font-family: "Funnel Display";
+    overscroll-behavior: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 15px 30px;
+    background: rgb(41, 131, 31);
+    width: 100%;
+    z-index: 9;
+}
+
+svg {
+    fill: #eef;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.ph-number,
+.e-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-nav * {
+    font-size: .87rem;
+    letter-spacing: .8px;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+.links,
+.main-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links ul,
+.main-links ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.links li,
+.main-links li {
+    list-style: none;
+    height: 100%;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.ham-burger {
+    display: none;
+    position: relative;
+    margin-left: auto;
+}
+
+.ham-burger-button {
+    border: none;
+    background: none;
+}
+
+.ham-burger-button.close {
+    margin-left: auto;
+}
+
+.ham-burger-menu {
+    min-height: 100%;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    transform: translateX(100vw);
+    background: #242424;
+    border-radius: 20px 0 0 20px;
+    overflow-y: auto;
+}
+
+.ham-burger-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 20px;
+}
+
+.ham-burger-menu ul li {
+    height: 30px;
+    display: grid;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.ham-burger-menu ul li a {
+    text-decoration: none;
+    color: #eef;
+}
+
+.ham-burger-menu.active a {
+    font-size: 18px;
+    animation: HamBurgerMove 0.3s linear forwards;
+    transform: translateX(100vw);
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+
+@keyframes HamBurgerMove {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ham-burger-menu.active {
+    transform: translateX(0);
+}
+
+.links a,
+.main-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    margin-top: 20px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+}
+
+.logo h1 {
+    font-size: 24px;
+    transition: all .6s;
+}
+
+.logo.scrolled h1 {
+    font-size: 20px;
+}
+
+.logo.scrolled {
+    height: 50px;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.contact-section{
+  min-height: 100vh;
+  height: fit-content;
+ display: flex;
+ align-items: center;
+ padding: 4rem clamp(1rem, 7vw ,4rem);
+ background: #091a15;
+ flex-wrap: wrap;
+ gap: 40px;
+}
+
+.contact-section .form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 2 1;
+  flex-basis: 500px;
+}
+
+.form-container h1{
+  font-size: clamp(2rem, 5vw, 5rem);
+  color: #fff;
+}
+
+.contact-section form{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "Name E-mail"
+    "Subject Ph"
+    "ta ta";
+  gap: 20px;
+}
+
+textarea{
+  resize: none;
+}
+
+input, textarea{
+  color: #fff;
+  background: none;
+  outline: none;
+  min-height: 50px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 3px solid #fff;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #fff;
+}
+
+.form-container button{
+  width: fit-content;
+  padding: 20px 40px;
+  background: #95dbc7;
+  font-size: clamp(0.626rem, 2vw, 1.25rem);
+  border-radius: 20px;
+  margin-left: auto;
+}
+
+.info{
+  color: #fff;
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info h1{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  white-space: nowrap;
+  font-size: clamp(0.625rem, 7vw , 3.25rem);
+}
+
+.info h1 span{
+  height: 100%;
+  width: 2rem;
+}
+
+/* Google Map */
+.map-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 128, 0, 0.2);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.footer {
+  background-color: #026b1a;
+  color: white;
+  padding: 40px 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1080px) {
+  .top-nav {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+  }
+
+  .main-links ul {
+      padding: 0 10px;
+  }
+
+  nav a {
+      font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul li {
+      display: none;
+  }
+
+  .ham-burger {
+      display: block;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .contact-section form{
+    grid-template-areas: 
+    "Name Name"  
+    "E-mail E-mail"
+    "Subject Subject" 
+    "Ph Ph"
+    "ta ta";
+  }
+}
