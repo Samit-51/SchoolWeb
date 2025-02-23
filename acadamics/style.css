@@ -202,153 +202,119 @@ nav a {
     height: 100%;
 }
 
-section {
-    height: fit-content;
-    position: relative;
-    margin-bottom: 2rem;
-}
-
 .index {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.index .img {
-    position: relative;
-    width: 100%;
-}
-
-.index img {
-    height: 100%;
-    width: 100%;
-    max-width: 100vw;
-    object-fit: cover;
-}
-
-.custom-shape-divider-bottom-1740212333 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1740212333 svg {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1740212333 .shape-fill {
-    fill: #FFF;
-}
-
-.secondary-links {
     height: fit-content;
-    width: 100%;
-    position: sticky;
-    top: var(--header-height, 0px);
-    z-index: 4;
-    padding: 1rem clamp(1rem, 2vw, 3rem);
+}
+
+.index .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: clamp(1.25rem, 10vw, 4rem);
+    margin: auto;
+}
+
+.card {
     background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.secondary-links ul {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: space-evenly;
-    white-space: nowrap;
-    list-style: none;
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-.secondary-links ul a {
-    text-decoration: none;
-    color: #000;
+.card h3 {
+    color: #2d6a4f;
+    margin-bottom: 10px;
 }
 
-.secondary-links a.active {
-    color: rgb(112, 225, 23);
+.card p {
+    color: #555;
+}
+
+.index svg {
+    height: 70px;
+    fill: #242424;
+}
+
+.footer {
+    background-color: #026b1a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-.principle-msg,
-.chairman-msg {
+.footer-section h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    color: #000;
+    gap: 10px;
+    margin: 10px 0;
 }
 
-section h1 {
-    color: #000;
-    text-align: center;
-    position: relative;
-    font-size: clamp(1.25rem, 10vw, 4rem);
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-section h1::before {
-    content: '';
-    height: 6px;
-    width: 60%;
-    bottom: -10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgb(112, 225, 23);
+@media only screen and (max-width: 1080px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .main-links ul {
+        padding: 0 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .logo {
+        scale: .8;
+    }
 }
 
-.msg {
-    height: 100%;
-    width: 80%;
-}
-
-.msg img {
-    margin: 50px 20px 20px 70px;
-    height: clamp(60px, 20vw, 300px);
-    width: clamp(60px, 20vw, 300px);
-    object-fit: cover;
-    float: left;
-    border-radius: 50%;
-    shape-outside: circle();
-}
-
-.msg p {
-    text-align: justify;
-    line-height: 20px;
-}
-
-.chairman-msg img {
-    float: right;
-}
-
-.know-us {
-    flex-direction: column;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.know-us img {
-    width: 80vw;
-}
-
-.know-us p, .our-goals p{
-    color: #000;
-    text-align: justify;
-    line-height: 20px;
-    padding: clamp(10px, 5vw, 4rem);
-}
 
 @media only screen and (max-width: 768px) {
     nav ul li {
