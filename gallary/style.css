@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: fit-content;
+    min-height: 100vh;
+    color: #fff;
+    font-family: "Funnel Display";
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    position: relative;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 15px 30px;
+    background: rgb(41, 131, 31);
+    width: 100%;
+    z-index: 9;
+}
+
+svg {
+    fill: #eef;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.ph-number,
+.e-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-nav * {
+    font-size: .87rem;
+    letter-spacing: .8px;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+.links,
+.main-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links ul,
+.main-links ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.links li,
+.main-links li {
+    list-style: none;
+    height: 100%;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.ham-burger {
+    display: none;
+    position: relative;
+    margin-left: auto;
+}
+
+.ham-burger-button {
+    border: none;
+    background: none;
+}
+
+.ham-burger-button.close {
+    margin-left: auto;
+}
+
+.ham-burger-menu {
+    min-height: 100%;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    transform: translateX(100vw);
+    background: #242424;
+    border-radius: 20px 0 0 20px;
+    overflow-y: auto;
+}
+
+.ham-burger-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 20px;
+}
+
+.ham-burger-menu ul li {
+    height: 30px;
+    display: grid;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.ham-burger-menu ul li a {
+    text-decoration: none;
+    color: #eef;
+}
+
+.ham-burger-menu.active a {
+    font-size: 18px;
+    animation: HamBurgerMove 0.3s linear forwards;
+    transform: translateX(100vw);
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+
+@keyframes HamBurgerMove {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ham-burger-menu.active {
+    transform: translateX(0);
+}
+
+.links a,
+.main-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    margin-top: 20px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+}
+
+.logo h1 {
+    font-size: 24px;
+    transition: all .6s;
+}
+
+.logo.scrolled h1 {
+    font-size: 20px;
+}
+
+.logo.scrolled {
+    height: 50px;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-links button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid #1b5e20;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: #1b5e20;
+    font-size: 14px;
+}
+
+.nav-links button:hover {
+    background: #5daa63;
+    color: white;
+}
+
+.nav-links button.active {
+    background: #1b5e20;
+    color: white;
+}
+
+.main{
+    min-height: 60vh;
+    margin: 2rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    min-height: 200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    color: #242424;
+}
+
+.card.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.footer {
+    background-color: #026b1a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .main-links ul {
+        padding: 0 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .logo {
+        scale: .8;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: none;
+    }
+
+    .ham-burger {
+        display: block;
+    }
+}
