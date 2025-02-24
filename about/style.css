@@ -359,3 +359,9 @@ section h1::before {
         display: block;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .secondary-links{
+        display: none;
+    }
+}
