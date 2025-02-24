@@ -207,7 +207,7 @@ nav a {
     top: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    width: 420px;
+    width: 480px;
     padding-top: 5px;
     background: #000;
     animation: move 1.5s ease-out forwards;
@@ -645,6 +645,10 @@ section {
 }
 
 @media (max-width: 480px) {
+    .popup{
+        width: 80vw;
+    }
+    
     .slider-container {
         height: 50vh;
     }
