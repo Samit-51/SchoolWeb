@@ -202,44 +202,106 @@ nav a {
     height: 100%;
 }
 
-.index {
+.main{
+    background: rgba(156, 232, 147, 0.3);
+    padding: 2rem clamp(1.25rem, 7vw, 4rem);
     height: fit-content;
 }
 
-.index .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: clamp(1.25rem, 10vw, 4rem);
-    margin: auto;
 }
 
-.card {
+.main-news {
     background: #fff;
+    flex: 1 1 350px;
+    position: relative;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-news img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-news-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
+.main-news-content h2 {
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
-.card h3 {
-    color: #2d6a4f;
-    margin-bottom: 10px;
+.main-news-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-.card p {
-    color: #555;
+.news-cards {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.index svg {
-    height: 70px;
-    fill: #242424;
+.news-card {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 155px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.news-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 15px;
+    width: 60%;
+}
+
+.news-card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.news-card-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #2a7de1;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .footer {
@@ -315,12 +377,59 @@ nav a {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+
+    .main-news {
+        height: 400px;
+    }
+
+    .news-card {
+        height: 140px;
+    }
+
     nav ul li {
         display: none;
     }
 
     .ham-burger {
         display: block;
+    }
+
+    .details{
+        height: fit-content;
+    }
+
+    .slider-container {
+        height: 60vh;
+    }
+
+    .slide {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contacts {
+        justify-content: center;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .news-card img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .news-card-content {
+        width: 100%;
     }
 }
