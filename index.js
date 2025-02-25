@@ -1,21 +1,5 @@
-let hamBurgerBtn = document.querySelector(".ham-burger-button.open");
-let hamBurgerMenu = document.querySelector(".ham-burger-menu");
-const logo = document.querySelector(".logo");
 const closeBtn = document.getElementById("close-btn");
-const hamburger = document.getElementById("hamburger");
-const mainLinks = document.querySelector(".main-links");
-const navBtnContainer = document.querySelector(".nav-btns");
 const popup = document.querySelector('.popup');
-
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 120) {
-        logo.classList.add("scrolled");
-    } else {
-        logo.classList.remove("scrolled");
-    }
-});
-
 
 closeBtn.addEventListener('click', () => {
     popup.style.display = 'none';
@@ -29,35 +13,13 @@ window.addEventListener('click', (e) => {
     }
 });
 
-
-if (hamBurgerBtn) {
-    hamBurgerBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        hamBurgerMenu.classList.toggle("active");
-    });
-    window.addEventListener("resize", () => {
-        if (window.innerWidth > 520) {
-            hideHamBurger();
-        }
-    });
-
-    window.addEventListener('click', () => {
-        if (hamBurgerMenu.classList.contains('active')) {
-            hideHamBurger();
-        }
-    });
-
-    function hideHamBurger() {
-        hamBurgerMenu.classList.remove("active");
-    }
-}
-
 // Image slider part
 
 const slides = document.querySelectorAll('.slide');
 const navButtons = document.querySelectorAll('.nav-btn');
-const slider = document.querySelector('.slider'); 
+const slider = document.querySelector('.slider');
 let index = 0;
+const navBtnContainer = document.querySelector(".nav-btns");
 let autoSlideInterval;
 
 function showSlide() {
@@ -85,7 +47,7 @@ function goToSlide(slideIndex) {
     resetTimer();
 }
 
-function resetTimer(){
+function resetTimer() {
     clearInterval(autoSlideInterval);
     autoSlideInterval = setInterval(nextSlide, 5000);
 }
@@ -128,3 +90,43 @@ document.querySelector('.slider').addEventListener('touchend', (e) => {
 // Start auto-slide
 autoSlideInterval = setInterval(nextSlide, 5000);
 
+const principalMessage = document.getElementById('principal-message');
+const chairmanMessage = document.getElementById('chairman-message');
+const showPrincipalBtn = document.getElementById('show-principal');
+const showChairmanBtn = document.getElementById('show-chairman');
+
+// Function to handle smooth transitions
+function switchMessages(showElement, hideElement) {
+    // First fade out the current element
+    hideElement.classList.add('fade-out');
+    hideElement.classList.remove('fade-in');
+
+    // After the fade-out animation completes, hide it and show the new element
+    setTimeout(() => {
+        hideElement.style.display = 'none';
+        showElement.style.display = 'flex';
+
+        // Trigger reflow to ensure the transition works
+        void showElement.offsetWidth;
+
+        // Add the fade-in class to the new element
+        showElement.classList.add('fade-in');
+        showElement.classList.remove('fade-out');
+    }, 500); // Match this timing with your CSS transition duration
+}
+
+showPrincipalBtn.addEventListener('click', function () {
+    if (principalMessage.style.display === 'none') {
+        switchMessages(principalMessage, chairmanMessage);
+        showPrincipalBtn.classList.add('active');
+        showChairmanBtn.classList.remove('active');
+    }
+});
+
+showChairmanBtn.addEventListener('click', function () {
+    if (chairmanMessage.style.display === 'none') {
+        switchMessages(chairmanMessage, principalMessage);
+        showPrincipalBtn.classList.remove('active');
+        showChairmanBtn.classList.add('active');
+    }
+});
