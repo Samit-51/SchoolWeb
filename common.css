@@ -183,6 +183,10 @@ nav a {
     transition: all .6s;
 }
 
+.logo img{
+    border-radius: 50%;
+}
+
 .logo h1 {
     font-size: 24px;
     transition: all .6s;
@@ -615,7 +619,7 @@ nav a {
 
 @media (max-width: 480px) {
     .popup {
-        width: 80vw;
+        width: 100vw;
     }
 
     .slider-container {

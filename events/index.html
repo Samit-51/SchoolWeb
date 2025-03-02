@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Events</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="contacts">
+                <div class="ph-number">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px"
+                        fill="#000">
+                        <path
+                            d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                    </svg>
+                    <span class="phoneNumber1">061-111111</span>|
+                    <span class="phoneNumber2">222222</span> |
+                    <span class="phoneNumber3">333333</span>
+                </div>
+                <div class="e-mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px"
+                        fill="#000">
+                        <path
+                            d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                    </svg>
+                    <span class="eMail">example123@gmail.com</span>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../gallary/index.html">Gallary</a></li>
+                    <li><a href="#">Entrance Form</a></li>
+                    <li><a href="#">Magazine </a></li>
+                    <li><a href="#">Results</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="https://placehold.co/500x500" class="logo-img" />
+                <h1>PGPEB <br />SCHOOL</h1>
+            </div>
+            <div class="main-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./index.html">About us</a></li>
+                    <li><a href="../acadamics/index.html">Acadamics</a></li>
+                    <li><a href="../news/index.html">News and Notice</a></li>
+                    <li><a href=".index.html" class="active">Events</a></li>
+                    <li><a href="../our-services/index.html">Our services</a></li>
+                    <li><a href="../contact/index.html">Contact us</a></li>
+                    <li class="ham-burger"><button class="ham-burger-button open"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></button></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="ham-burger-menu">
+            <ul>
+                <li><button class="ham-burger-button close" onclick=hideHamburger()><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e8eaed">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></button></li>
+                <li><a href="../gallary/index.html">Gallary</a></li>
+                <li><a href="../index.html" style="--i: 1">Entrance Form</a></li>
+                <li><a href="../about/index.html" style="--i: 2">Magazine </a></li>
+                <li><a href="#" style="--i: 4">Results</a></li>
+                <li><a href="../index.html" style="--i: 5">Home</a></li>
+                <li><a href="../about/index.html" style="--i: 6">About us</a></li>
+                <li><a href="../acadamics/index.html" style="--i: 5">Acadamics</a></li>
+                <li><a href="../news/index.html" style="--i: 4">News and Notice</a></li>
+                <li><a href="./index.html" style="--i: 3">Events</a></li>
+                <li><a href="../our-services/index.html" style="--i: 2">Our services</a></li>
+                <li><a href="../contact/index.html" style="--i: 1">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="main">
+        <div class="events-container">
+            <!-- Recent Events Section -->
+            <div class="events-section">
+                <h2>Recent Events</h2>
+                <div class="event-cards">
+                    <!-- Recent Event Card 1 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-recent">Recent</span>
+                        <img src="https://placehold.co/600x400" alt="Science Fair">
+                        <div class="event-card-content">
+                            <h3>Annual Science Fair</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>February 25, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Auditorium</span>
+                            </div>
+                            <p>Our students showcased impressive scientific projects and experiments at the annual science fair, demonstrating their creativity and innovative thinking.</p>
+                            <a href="#" class="read-more">View Gallery →</a>
+                        </div>
+                    </div>
+
+                    <!-- Recent Event Card 2 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-recent">Recent</span>
+                        <img src="https://placehold.co/600x400" alt="Sports Day">
+                        <div class="event-card-content">
+                            <h3>Inter-School Sports Competition</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>February 20-22, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Playground</span>
+                            </div>
+                            <p>Our school hosted a three-day sports competition with neighboring schools, featuring football, basketball, and track events. Our team won multiple medals!</p>
+                            <a href="#" class="read-more">View Results →</a>
+                        </div>
+                    </div>
+
+                    <!-- Recent Event Card 3 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-recent">Recent</span>
+                        <img src="https://placehold.co/600x400" alt="Cultural Program">
+                        <div class="event-card-content">
+                            <h3>Cultural Arts Festival</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>February 15, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Multipurpose Hall</span>
+                            </div>
+                            <p>Students performed traditional dances, music, and theatrical performances celebrating our cultural diversity. Parents and community members joined in celebration.</p>
+                            <a href="#" class="read-more">View Highlights →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ongoing Events Section -->
+            <div class="events-section">
+                <h2>Ongoing Events</h2>
+                <div class="event-cards">
+                    <!-- Ongoing Event Card 1 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-ongoing">Ongoing</span>
+                        <img src="https://placehold.co/600x400" alt="Art Exhibition">
+                        <div class="event-card-content">
+                            <h3>Student Art Exhibition</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>March 1-7, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Gallery</span>
+                            </div>
+                            <p>View artwork created by our talented students across all grades. The exhibition is open to parents and the public from 9:00 AM to 4:00 PM daily.</p>
+                            <a href="#" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Ongoing Event Card 2 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-ongoing">Ongoing</span>
+                        <img src="https://placehold.co/600x400" alt="Book Fair">
+                        <div class="event-card-content">
+                            <h3>Annual Book Fair</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>February 28 - March 5, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Library</span>
+                            </div>
+                            <p>Explore thousands of books across various genres and subjects. Special discounts for students. Guest authors will be present for book signings and discussions.</p>
+                            <a href="#" class="read-more">View Schedule →</a>
+                        </div>
+                    </div>
+
+                    <!-- Ongoing Event Card 3 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-ongoing">Ongoing</span>
+                        <img src="https://placehold.co/600x400" alt="Coding Challenge">
+                        <div class="event-card-content">
+                            <h3>Coding Challenge Week</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>March 1-8, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Computer Lab</span>
+                            </div>
+                            <p>Students compete in daily coding challenges to develop problem-solving skills. Open to all grades with age-appropriate tasks. Prizes will be awarded at the closing ceremony.</p>
+                            <a href="#" class="read-more">Join Challenge →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <div class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="event-cards">
+                    <!-- Upcoming Event Card 1 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-upcoming">Upcoming</span>
+                        <img src="https://placehold.co/600x400" alt="Science Exhibition">
+                        <div class="event-card-content">
+                            <h3>Science Expedition</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>March 15, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>National Science Museum</span>
+                            </div>
+                            <p>Grades 8-10 will visit the National Science Museum for an educational tour. Permission forms must be signed by parents before March 10th.</p>
+                            <a href="#" class="read-more">Register Now →</a>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Event Card 2 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-upcoming">Upcoming</span>
+                        <img src="https://placehold.co/600x400" alt="Parent Teacher Meeting">
+                        <div class="event-card-content">
+                            <h3>Parent-Teacher Conference</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>March 20-21, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Classrooms</span>
+                            </div>
+                            <p>Meet with teachers to discuss your child's academic progress. Schedule appointments online through the parent portal. Time slots available from 8:00 AM to 4:00 PM.</p>
+                            <a href="#" class="read-more">Schedule Meeting →</a>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Event Card 3 -->
+                    <div class="event-card" style="position: relative;">
+                        <span class="event-label label-upcoming">Upcoming</span>
+                        <img src="https://placehold.co/600x400" alt="Annual Day">
+                        <div class="event-card-content">
+                            <h3>Annual School Day Celebration</h3>
+                            <div class="event-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>March 30, 2025</span>
+                            </div>
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>School Auditorium</span>
+                            </div>
+                            <p>Join us for our biggest celebration of the year featuring student performances, award ceremonies, and special guest speakers. All parents and alumni are cordially invited.</p>
+                            <a href="#" class="read-more">Get Tickets →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>PGPEB School</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h4>Address</h4>
+                <p>Thapathana, Parbhat</p>
+                <h4>Call Us</h4>
+                <p>01-7878787<br>01-7979797</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><span class="service-link" data-service="computer-lab">Computer Lab</span></li>
+                    <li><span class="service-link" data-service="cafeteria">Cafeteria</span></li>
+                    <li><span class="service-link" data-service="transportation">Transportation</span></li>
+                    <li><span class="service-link" data-service="sports">Sports</span></li>
+                    <li><span class="service-link" data-service="internet">Use of Internet</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Our Programmes</h3>
+                <ul>
+                    <li>Secondary School</li>
+                    <li>Extra-curricular Activities</li>
+                    <li>Academic Excellence</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="../about/index.html#principle-msg">Principal's message</a></li>
+                    <li><a href="../about/index.html#chairman-msg">Chairman's message</a></li>
+                    <li><a href="../about/index.html#know-us">Know us</a></li>
+                    <li><a href="#">Executive Board</a></li>
+                    <li><a href="#">Admission Procedure</a></li>
+                    <li><a href="#">Achievements</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@pgpeb.edu.np</p>
+                <p><i class="fas fa-phone"></i> 01-7878787</p>
+                <p><i class="fas fa-map-marker-alt"></i> Thapathana, Parbhat</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 PGPEB School. All Rights Reserved.</p>
+        </div>
+
+        <!-- Popup Overlay (initially hidden) -->
+        <div class="popup-overlay" id="popup-overlay">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h3 id="popup-title">Service Title</h3>
+                    <button class="popup-close" id="popup-close">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-image">
+                        <img id="popup-img" src="" alt="Service Image">
+                    </div>
+                    <div class="popup-text" id="popup-text">
+                        Service description will appear here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../common.js"></script>
+</body>
+
+</html>
