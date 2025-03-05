@@ -18,8 +18,8 @@ body {
 
 header {
     position: sticky;
+    padding: 1rem clamp(10px, 7vw, 2rem);
     top: 0;
-    padding: 15px 30px;
     background: rgb(41, 131, 31);
     width: 100%;
     z-index: 9;
@@ -46,6 +46,7 @@ svg {
 
 .ph-number,
 .e-mail {
+    font-size: clamp(10px, 5vw, .87rem);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -88,6 +89,8 @@ nav a {
 }
 
 .ham-burger {
+    margin-top: auto;
+    float: right;
     display: none;
     position: relative;
     margin-left: auto;
@@ -168,8 +171,16 @@ nav a {
 
 .main-nav {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .logo {
@@ -569,12 +580,16 @@ nav a {
 }
 
 @media only screen and (max-width: 768px) {
-    nav ul li {
+    .main-links, .links{
         display: none;
     }
 
     .ham-burger {
         display: block;
+    }
+
+    .logo{
+        margin-top: 8px;
     }
 
     .details {
