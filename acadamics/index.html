@@ -12,7 +12,7 @@
     <title>Acadamics</title>
 </head>
 
-<body>
+<body data-page="Academics">
     <header>
         <nav class="top-nav">
             <div class="contacts">
@@ -45,9 +45,15 @@
             </div>
         </nav>
         <nav class="main-nav">
-            <div class="logo">
-                <img src="https://placehold.co/500x500" class="logo-img" />
-                <h1>PGPEB <br />SCHOOL</h1>
+            <div class="top">
+                <div class="logo">
+                    <img src="https://placehold.co/500x500" class="logo-img" />
+                    <h1>PGPEB <br />SCHOOL</h1>
+                </div>
+                <div class="ham-burger"><button class="ham-burger-button open"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></button></div>
             </div>
             <div class="main-links">
                 <ul>
@@ -58,11 +64,6 @@
                     <li><a href="../events/index.html">Events</a></li>
                     <li><a href="../our-services/index.html">Our services</a></li>
                     <li><a href="../contact/index.html">Contact us</a></li>
-                    <li class="ham-burger"><button class="ham-burger-button open"><svg
-                                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                                fill="#000">
-                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                            </svg></button></li>
                 </ul>
             </div>
         </nav>
@@ -91,12 +92,10 @@
     </header>
     <section class="index">
         <div class="container">
-            <h2>Admission Procedure</h2>
-            
-            <div class="description">
-                Our admission process is designed to identify motivated students who will thrive in our academic environment. The following steps outline the complete admission procedure that all applicants must complete to be considered for enrollment.
-            </div>
-            
+            <h2 class="title"></h2>
+
+            <div class="description"></div>
+
             <ul class="procedure-list">
                 <li class="procedure-item">
                     <div class="icon">
@@ -105,12 +104,12 @@
                                 d="M280-880h400v314q0 23-10 41t-28 29l-142 84 28 92h152l-124 88 48 152-124-94-124 94 48-152-124-88h152l28-92-142-84q-18-11-28-29t-10-41v-314Zm80 80v234l80 48v-282h-80Zm240 0h-80v282l80-48v-234ZM480-647Zm-40-12Zm80 0Z" />
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>Eligibility</h3>
-                        <p>Students must have secured a prescribed GPA in SEE and equivalent examination by NEB.</p>
+                    <div class="content procedure1">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </li>
-                
+
                 <li class="procedure-item">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -118,12 +117,12 @@
                                 d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z" />
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>Admissions</h3>
-                        <p>Students must submit prescribed admission forms distributed in school/college administration.</p>
+                    <div class="content procedure2">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </li>
-                
+
                 <li class="procedure-item">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -131,18 +130,18 @@
                                 d="M560-80v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-300L683-80H560Zm300-263-37-37 37 37ZM620-140h38l121-122-18-19-19-18-122 121v38ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v120h-80v-80H520v-200H240v640h240v80H240Zm280-400Zm241 199-19-18 37 37-18-19Z" />
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>Entrance Exams</h3>
-                        <p>Applicants must appear in the entrance test.</p>
+                    <div class="content procedure3">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </li>
-                
+
                 <li class="procedure-item">
                     <div class="icon">
                         <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
                             <g>
-                                <path 
+                                <path
                                     d="M315.656,149.531l-14.166,35.403l10.236-1.259c35.35-4.424,69.181-17.656,85.251-24.591
                                     c15.266-5.455,28.445-14.772,37.922-26.874c9.56-12.185,15.372-27.337,15.348-43.703c0.023-10.698-2.481-20.926-6.859-30.099
                                     c-6.616-13.778-17.466-25.205-30.865-33.21c-13.422-8.005-29.47-12.61-46.677-12.626c-22.929,0.016-43.817,8.187-59.174,21.73
@@ -165,16 +164,18 @@
                                     c31.685,5.197,54.28,21.267,67.376,43.415h155.373c3.703,0,7.163-1.866,9.196-4.954
                                     C512.221,491.379,512.57,487.463,511.099,484.064z M311.946,386.059c0,31.419-25.478,56.89-56.89,56.89
                                     c-31.427,0-56.89-25.472-56.89-56.89v-16.146c0-31.42,25.463-56.89,56.89-56.89c31.412,0,56.89,25.471,56.89,56.89V386.059z" />
-                                <path d="M316.718,264.335c0-27.626-16.214-50.388-47.186-55.47c-4.264,1.418-8.809,2.215-13.536,2.215
+                                <path
+                                    d="M316.718,264.335c0-27.626-16.214-50.388-47.186-55.47c-4.264,1.418-8.809,2.215-13.536,2.215
                                     c-4.742,0-9.287-0.796-13.551-2.215c-30.971,5.083-47.178,27.845-47.178,55.47h60.729H316.718z" />
-                                <path d="M255.997,201.231c18.346,0,33.232-14.878,33.232-33.232v-9.431c0-18.362-14.886-33.24-33.232-33.24
+                                <path
+                                    d="M255.997,201.231c18.346,0,33.232-14.878,33.232-33.232v-9.431c0-18.362-14.886-33.24-33.232-33.24
                                     c-18.361,0-33.248,14.878-33.248,33.24v9.431C222.749,186.352,237.636,201.231,255.997,201.231z" />
                             </g>
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>Interview</h3>
-                        <p>Applicants will undergo an interview process before final selection.</p>
+                    <div class="content procedure4">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </li>
             </ul>
@@ -182,46 +183,56 @@
     </section>
     <section class="achievements">
         <div class="container">
-            <h2>Academic Achievements</h2>
-            
-            <div class="description">
-                Our institution takes pride in the outstanding accomplishments of our students and faculty. These achievements reflect our commitment to academic excellence and holistic development.
-            </div>
-            
+            <h2 class="title"></h2>
+
+            <div class="description"></div>
+
             <div class="achievements-grid">
                 <div class="achievement-item">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 15c2.21 0 4-1.79 4-4 0-2.21-1.79-4-4-4-2.21 0-4 1.79-4 4 0 2.21 1.79 4 4 4z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15c2.21 0 4-1.79 4-4 0-2.21-1.79-4-4-4-2.21 0-4 1.79-4 4 0 2.21 1.79 4 4 4z">
+                            </path>
                             <path d="M19 15a7 7 0 0 0-14 0"></path>
                             <path d="M12 15v7"></path>
                             <path d="M9 18h6"></path>
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>National Merit Scholars</h3>
-                        <p>Over 45 students recognized as National Merit Scholars in the past five years, demonstrating exceptional academic aptitude and achievement.</p>
+                    <div class="content achievement1">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </div>
-                
+
                 <div class="achievement-item">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12.01 12c0-3.57 2.2-6.79 5.61-8.13.34-.14.57-.47.57-.84a.893.893 0 0 0-1.21-.83C13.87 3.84 12.01 7.68 12.01 12c0 4.32 1.87 8.16 4.97 10.8.23.16.51.22.78.14.27-.08.49-.28.57-.54.06-.18.06-.37 0-.55-.06-.18-.18-.33-.34-.43-3.41-1.34-5.61-4.56-5.61-8.13Z"></path>
-                            <path d="M11.99 12c0 3.57-2.2 6.79-5.61 8.13-.34.14-.57.47-.57.84.08.41.4.72.81.79.11.02.22.02.33 0 3.13-2.65 4.97-6.48 4.97-10.8 0-4.32-1.86-8.15-4.96-10.8a.887.887 0 0 0-1.21.83c0 .37.23.7.57.84 3.41 1.33 5.61 4.56 5.61 8.13Z"></path>
-                            <path d="M18.51 15.68c-.25.09-.48.09-.73 0-2.93-1.15-4.84-3.83-4.84-6.91 0-3.08 1.91-5.76 4.84-6.91.25-.09.48-.09.73 0 .25.09.45.26.58.48.12.23.15.48.09.73-.06.25-.2.47-.42.62-2.23.87-3.66 2.92-3.66 5.08 0 2.16 1.43 4.21 3.66 5.08.22.15.36.37.42.62.06.25.03.5-.09.73-.13.22-.33.39-.58.48Z"></path>
-                            <path d="M6.22 15.68c.25.09.48.09.73 0 2.93-1.15 4.84-3.83 4.84-6.91 0-3.08-1.91-5.76-4.84-6.91-.25-.09-.48-.09-.73 0-.25.09-.45.26-.58.48-.12.23-.15.48-.09.73.06.25.2.47.42.62 2.23.87 3.66 2.92 3.66 5.08 0 2.16-1.43 4.21-3.66 5.08-.22.15-.36.37-.42.62-.06.25-.03.5.09.73.13.22.33.39.58.48Z"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12.01 12c0-3.57 2.2-6.79 5.61-8.13.34-.14.57-.47.57-.84a.893.893 0 0 0-1.21-.83C13.87 3.84 12.01 7.68 12.01 12c0 4.32 1.87 8.16 4.97 10.8.23.16.51.22.78.14.27-.08.49-.28.57-.54.06-.18.06-.37 0-.55-.06-.18-.18-.33-.34-.43-3.41-1.34-5.61-4.56-5.61-8.13Z">
+                            </path>
+                            <path
+                                d="M11.99 12c0 3.57-2.2 6.79-5.61 8.13-.34.14-.57.47-.57.84.08.41.4.72.81.79.11.02.22.02.33 0 3.13-2.65 4.97-6.48 4.97-10.8 0-4.32-1.86-8.15-4.96-10.8a.887.887 0 0 0-1.21.83c0 .37.23.7.57.84 3.41 1.33 5.61 4.56 5.61 8.13Z">
+                            </path>
+                            <path
+                                d="M18.51 15.68c-.25.09-.48.09-.73 0-2.93-1.15-4.84-3.83-4.84-6.91 0-3.08 1.91-5.76 4.84-6.91.25-.09.48-.09.73 0 .25.09.45.26.58.48.12.23.15.48.09.73-.06.25-.2.47-.42.62-2.23.87-3.66 2.92-3.66 5.08 0 2.16 1.43 4.21 3.66 5.08.22.15.36.37.42.62.06.25.03.5-.09.73-.13.22-.33.39-.58.48Z">
+                            </path>
+                            <path
+                                d="M6.22 15.68c.25.09.48.09.73 0 2.93-1.15 4.84-3.83 4.84-6.91 0-3.08-1.91-5.76-4.84-6.91-.25-.09-.48-.09-.73 0-.25.09-.45.26-.58.48-.12.23-.15.48-.09.73.06.25.2.47.42.62 2.23.87 3.66 2.92 3.66 5.08 0 2.16-1.43 4.21-3.66 5.08-.22.15-.36.37-.42.62-.06.25-.03.5.09.73.13.22.33.39.58.48Z">
+                            </path>
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>International Olympiad Winners</h3>
-                        <p>Students have consistently won medals in Mathematics, Physics, Chemistry, and Biology Olympiads, showcasing our strength in STEM education.</p>
+                    <div class="content achievement2">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </div>
-                
+
                 <div class="achievement-item">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="6" cy="6" r="3"></circle>
                             <circle cx="6" cy="18" r="3"></circle>
                             <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
@@ -229,15 +240,16 @@
                             <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>Research Publications</h3>
-                        <p>Faculty and student research has been published in prestigious journals, with 35+ peer-reviewed publications in the last academic year alone.</p>
+                    <div class="content achievement3">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </div>
-                
+
                 <div class="achievement-item">
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M8.7 3H1v6h7.7c.8 0 1.3-.9 1.3-1.5v-3C10 3.9 9.5 3 8.7 3z"></path>
                             <path d="M8.7 15H1v6h7.7c.8 0 1.3-.9 1.3-1.5v-3c0-1.6-.5-2.5-1.3-2.5z"></path>
                             <path d="M15.2 9H1v6h14.2c.8 0 1.8-.9 1.8-1.5v-3c0-1.6-1-2.5-1.8-2.5z"></path>
@@ -246,9 +258,9 @@
                             <path d="M22 12h-1"></path>
                         </svg>
                     </div>
-                    <div class="content">
-                        <h3>College Placements</h3>
-                        <p>92% of our graduating students secure admissions to top-tier universities nationally and internationally, with a significant number receiving scholarships.</p>
+                    <div class="content achievement4">
+                        <h3 class="title"></h3>
+                        <p class="description"></p>
                     </div>
                 </div>
             </div>
@@ -333,6 +345,7 @@
         </div>
     </footer>
     <script src="../common.js"></script>
+    <script src="../admin/admin.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,798 @@
+{
+  "Home": {
+    "home": {
+      "slide1": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      },
+      "slide2": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      },
+      "slide3": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      },
+      "slide4": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      },
+      "slide5": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      },
+      "slide6": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      }
+    },
+    "details": {
+      "quote": {
+        "type": "textContent",
+        "content": "“Education for Discipline and Excellence”"
+      },
+      "message": {
+        "type": "textContent",
+        "content": "Our school believes in nurturing discipline and excellence in every student."
+      },
+      "schoolImage": {
+        "type": "src",
+        "content": "https://placehold.co/600x400"
+      }
+    },
+    "message-section": {
+      "principal-message": {
+        "type": "object",
+        "content": {
+          "principal-photo": {
+            "type": "src",
+            "content": "https://placehold.co/400x400"
+          },
+          "message": {
+            "type": "textContent",
+            "content": "\"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ducimus magnam nobis minima odit maxime, sit aspernatur amet doloribus odio harum voluptatibus fugit officia quas iure ipsa omnis similique at.\""
+          },
+          "name": {
+            "type": "textContent",
+            "content": "XYZ ABC"
+          },
+          "post": {
+            "type": "textContent",
+            "content": "--Principle"
+          }
+        }
+      },
+      "chairman-message": {
+        "type": "object",
+        "content": {
+          "chairman-photo": {
+            "type": "src",
+            "content": "https://placehold.co/400x400"
+          },
+          "message": {
+            "type": "textContent",
+            "content": "\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid expedita eum quaerat, dignissimos nesciunt repellat sint, quisquam natus cumque inventore. Corporis deserunt doloribus recusandae ea, iusto sequi tempore veniam.\""
+          },
+          "name": {
+            "type": "textContent",
+            "content": "ABC XYZ"
+          },
+          "post": {
+            "type": "textContent",
+            "content": "--Chairman"
+          }
+        }
+      }
+    },
+    "features": {
+      "stat1": {
+        "type": "object",
+        "content": {
+          "stat-number": {
+            "type": "textContent",
+            "content": "280k+"
+          },
+          "stat-text": {
+            "type": "textContent",
+            "content": "Our Happy Students"
+          }
+        }
+      },
+      "stat2": {
+        "type": "object",
+        "content": {
+          "stat-number": {
+            "type": "textContent",
+            "content": "15+"
+          },
+          "stat-text": {
+            "type": "textContent",
+            "content": "Teaching Years"
+          }
+        }
+      },
+      "stat3": {
+        "type": "object",
+        "content": {
+          "stat-number": {
+            "type": "textContent",
+            "content": "20+"
+          },
+          "stat-text": {
+            "type": "textContent",
+            "content": "Expert Instructor"
+          }
+        }
+      },
+      "stat4": {
+        "type": "object",
+        "content": {
+          "stat-number": {
+            "type": "textContent",
+            "content": "98%"
+          },
+          "stat-text": {
+            "type": "textContent",
+            "content": "Satisfaction Rate"
+          }
+        }
+      }
+    }
+  },
+  "About-us": {
+    "index": {
+      "schoolImage": {
+        "type": "src",
+        "content": "https://placehold.co/1920x1080"
+      }
+    },
+    "principle-msg": {
+      "PrincipleImage": {
+        "type": "src",
+        "content": "https://placehold.co/400x400"
+      },
+      "PrincipleMsg": {
+        "type": "textContent",
+        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas nobis accusantium sunt veniam! Nisi inventore dolore iure, obcaecati nulla ex? Fuga molestias facere nemo? Expedita necessitatibus hic saepe deserunt quibusdam, facere doloremque iusto facilis eaque aliquid cumque rem quam ullam illum consectetur voluptatem minus? Dignissimos soluta, et, facilis eius ab excepturi accusantium a explicabo delectus atque expedita, beatae odit natus. Illo possimus earum minus perspiciatis sapiente, rerum impedit saepe reiciendis quae iure labore voluptates iusto, officiis molestias quas corporis nisi soluta provident obcaecati repellat quidem eos facilis! Nam odio saepe provident rerum excepturi voluptate mollitia esse ipsa quidem illo dolore iste assumenda eaque reiciendis, qui, aut tempore perspiciatis facere id sint a distinctio molestias impedit. Quibusdam necessitatibus ullam, iusto pariatur minima libero vel qui facere possimus, adipisci veritatis, excepturi minus dolore odio ex voluptates ut nisi alias architecto vitae eligendi? Vitae, inventore. Reprehenderit at illo iusto numquam necessitatibus, inventore provident, magnam optio veritatis quaerat ipsum dolor consequuntur repellat nam saepe exercitationem autem quasi ea? Eos reiciendis amet est minima repudiandae in sunt, aperiam quasi, minus facere consequuntur explicabo, quaerat itaque veritatis aliquam dolorem tempore? Sapiente dolorum unde cumque, tenetur assumenda nam sunt pariatur distinctio fugiat sint necessitatibus, ut adipisci suscipit in amet illum autem cum officia quidem earum veritatis ipsam alias. Facilis commodi expedita repellat ipsa vel necessitatibus quo obcaecati quaerat. Suscipit expedita aspernatur, placeat iure tempore natus illo, saepe perferendis totam, fuga blanditiis. Pariatur fugiat eveniet perspiciatis, laudantium similique eos repellat neque dolorum aspernatur earum magnam id? Maiores dolorem reprehenderit dolor consectetur vero nisi soluta expedita suscipit. Ea ab quam commodi harum, iste voluptas et atque, eos reprehenderit iusto numquam. Reiciendis laboriosam dignissimos error ea velit, unde assumenda consequuntur rerum ipsum exercitationem aliquid enim consectetur voluptatem perferendis facere eligendi cupiditate perspiciatis sint. Laborum reprehenderit libero natus quam voluptatibus."
+      }
+    },
+    "chairman-msg": {
+      "ChairmanImage": {
+        "type": "src",
+        "content": "https://placehold.co/400x400"
+      },
+      "ChairmanMsg": {
+        "type": "textContent",
+        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas nobis accusantium sunt veniam! Nisi inventore dolore iure, obcaecati nulla ex? Fuga molestias facere nemo? Expedita necessitatibus hic saepe deserunt quibusdam, facere doloremque iusto facilis eaque aliquid cumque rem quam ullam illum consectetur voluptatem minus? Dignissimos soluta, et, facilis eius ab excepturi accusantium a explicabo delectus atque expedita, beatae odit natus. Illo possimus earum minus perspiciatis sapiente, rerum impedit saepe reiciendis quae iure labore voluptates iusto, officiis molestias quas corporis nisi soluta provident obcaecati repellat quidem eos facilis! Nam odio saepe provident rerum excepturi voluptate mollitia esse ipsa quidem illo dolore iste assumenda eaque reiciendis, qui, aut tempore perspiciatis facere id sint a distinctio molestias impedit. Quibusdam necessitatibus ullam, iusto pariatur minima libero vel qui facere possimus, adipisci veritatis, excepturi minus dolore odio ex voluptates ut nisi alias architecto vitae eligendi? Vitae, inventore. Reprehenderit at illo iusto numquam necessitatibus, inventore provident, magnam optio veritatis quaerat ipsum dolor consequuntur repellat nam saepe exercitationem autem quasi ea? Eos reiciendis amet est minima repudiandae in sunt, aperiam quasi, minus facere consequuntur explicabo, quaerat itaque veritatis aliquam dolorem tempore? Sapiente dolorum unde cumque, tenetur assumenda nam sunt pariatur distinctio fugiat sint necessitatibus, ut adipisci suscipit in amet illum autem cum officia quidem earum veritatis ipsam alias. Facilis commodi expedita repellat ipsa vel necessitatibus quo obcaecati quaerat. Suscipit expedita aspernatur, placeat iure tempore natus illo, saepe perferendis totam, fuga blanditiis. Pariatur fugiat eveniet perspiciatis, laudantium similique eos repellat neque dolorum aspernatur earum magnam id? Maiores dolorem reprehenderit dolor consectetur vero nisi soluta expedita suscipit. Ea ab quam commodi harum, iste voluptas et atque, eos reprehenderit iusto numquam. Reiciendis laboriosam dignissimos error ea velit, unde assumenda consequuntur rerum ipsum exercitationem aliquid enim consectetur voluptatem perferendis facere eligendi cupiditate perspiciatis sint. Laborum reprehenderit libero natus quam voluptatibus."
+      }
+    },
+    "know-us": {
+      "KnowUsImage": {
+        "type": "src",
+        "content": "https://placehold.co/1080x600"
+      },
+      "KnowUsMessage": {
+        "type": "textContent",
+        "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas nobis accusantium sunt veniam! Nisi inventore dolore iure, obcaecati nulla ex? Fuga molestias facere nemo? Expedita necessitatibus hic saepe deserunt quibusdam, facere doloremque iusto facilis eaque aliquid cumque rem quam ullam illum consectetur voluptatem minus? Dignissimos soluta, et, facilis eius ab excepturi accusantium a explicabo delectus atque expedita, beatae odit natus. Illo possimus earum minus perspiciatis sapiente, rerum impedit saepe reiciendis quae iure labore voluptates iusto, officiis molestias quas corporis nisi soluta provident obcaecati repellat quidem eos facilis! Nam odio saepe provident rerum excepturi voluptate mollitia esse ipsa quidem illo dolore iste assumenda eaque reiciendis, qui, aut tempore perspiciatis facere id sint a distinctio molestias impedit. Quibusdam necessitatibus ullam, iusto pariatur minima libero vel qui facere possimus, adipisci veritatis, excepturi minus dolore odio ex voluptates ut nisi alias architecto vitae eligendi? Vitae, inventore. Reprehenderit at illo iusto numquam necessitatibus, inventore provident, magnam optio veritatis quaerat ipsum dolor consequuntur repellat nam saepe exercitationem autem quasi ea? Eos reiciendis amet est minima repudiandae in sunt, aperiam quasi, minus facere consequuntur explicabo, quaerat itaque veritatis aliquam dolorem tempore? Sapiente dolorum unde cumque, tenetur assumenda nam sunt pariatur distinctio fugiat sint necessitatibus, ut adipisci suscipit in amet illum autem cum officia quidem earum veritatis ipsam alias. Facilis commodi expedita repellat ipsa vel necessitatibus quo obcaecati quaerat. Suscipit expedita aspernatur, placeat iure tempore natus illo, saepe perferendis totam, fuga blanditiis. Pariatur fugiat eveniet perspiciatis, laudantium similique eos repellat neque dolorum aspernatur earum magnam id? Maiores dolorem reprehenderit dolor consectetur vero nisi soluta expedita suscipit. Ea ab quam commodi harum, iste voluptas et atque, eos reprehenderit iusto numquam. Reiciendis laboriosam dignissimos error ea velit, unde assumenda consequuntur rerum ipsum exercitationem aliquid enim consectetur voluptatem perferendis facere eligendi cupiditate perspiciatis sint. Laborum reprehenderit libero natus quam voluptatibus."
+      }
+    },
+    "our-goals": {
+      "OurGoalsMesssge": {
+        "type": "textContent",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod rem voluptas. Nemo quae omnis numquam eligendi quibusdam? Aperiam, at ipsam consectetur perspiciatis provident laudantium amet quo. Voluptatum, at et rem repellendus dicta assumenda, nisi minus id velit molestiae omnis voluptatibus animi obcaecati dolor beatae impedit temporibus dolorem vero rerum sint dignissimos! Tempore, similique dolorum vero recusandae et dolor culpa cupiditate vitae sequi reprehenderit est neque aliquam accusamus impedit dicta eum doloremque aperiam maxime officiis? Excepturi, nostrum soluta? Ipsam, dolores? Autem labore id, repellendus quos molestiae debitis ut. Sunt, quod obcaecati minus nulla doloremque ducimus cupiditate sit delectus dignissimos voluptatem laudantium repellat iure vel, vero earum laboriosam quo ratione repellendus tempore officiis ad. Voluptatibus, distinctio quo autem vero iste eum illo ducimus minima aliquam, iure nostrum architecto reprehenderit cumque asperiores blanditiis veniam? Quos, quia magni? Iusto a minima quo eum adipisci. Aperiam tempore in harum placeat voluptates perferendis omnis ipsam."
+      }
+    }
+  },
+  "Academics": {
+    "index": {
+      "title": {
+        "type": "textContent",
+        "content": "Admission Procedure"
+      },
+      "description": {
+        "type": "textContent",
+        "content": "Our admission process is designed to identify motivated students who will thrive in our academic environment. The following steps outline the complete admission procedure that all applicants must complete to be considered for enrollment."
+      },
+      "procedure1": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Eligibility"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Students must have secured a prescribed GPA in SEE and equivalent examination by NEB."
+          }
+        }
+      },
+      "procedure2": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Admissions"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Students must submit prescribed admission forms distributed in school/college administration."
+          }
+        }
+      },
+      "procedure3": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Entrance Exams"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Applicants must appear in the entrance test."
+          }
+        }
+      },
+      "procedure4": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Interview"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Applicants will undergo an interview process before final selection."
+          }
+        }
+      }
+    },
+    "achievements": {
+      "title": {
+        "type": "textContent",
+        "content": "Academic Achievements"
+      },
+      "description": {
+        "type": "textContent",
+        "content": "Our institution takes pride in the outstanding accomplishments of our students and faculty. These achievements reflect our commitment to academic excellence and holistic development."
+      },
+      "achievement1": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "National Merit Scholars"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Over 45 students recognized as National Merit Scholars in the past five years, demonstrating exceptional academic aptitude and achievement."
+          }
+        }
+      },
+      "achievement2": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "International Olympiad Winners"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Students have consistently won medals in Mathematics, Physics, Chemistry, and Biology Olympiads, showcasing our strength in STEM education."
+          }
+        }
+      },
+      "achievement3": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Research Publications"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Faculty and student research has been published in prestigious journals, with 35+ peer-reviewed publications in the last academic year alone."
+          }
+        }
+      },
+      "achievement4": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "College Placements"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "92% of our graduating students secure admissions to top-tier universities nationally and internationally, with a significant number receiving scholarships."
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "recent-events": {
+      "title": {
+        "type": "textContent",
+        "content": "Recent Events"
+      },
+      "description": {
+        "type": "textContent",
+        "content": "Our school has hosted several enriching activities in the past month. These events have provided students with opportunities to showcase their talents and expand their knowledge beyond the classroom."
+      },
+      "event1": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Annual Science Fair"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "February 25, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Auditorium"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Our students showcased impressive scientific projects and experiments at the annual science fair, demonstrating their creativity and innovative thinking."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "View Gallery →"
+          }
+        }
+      },
+      "event2": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Inter-School Sports Competition"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "February 20-22, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Playground"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Our school hosted a three-day sports competition with neighboring schools, featuring football, basketball, and track events. Our team won multiple medals!"
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "View Results →"
+          }
+        }
+      },
+      "event3": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Cultural Arts Festival"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "February 15, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Multipurpose Hall"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Students performed traditional dances, music, and theatrical performances celebrating our cultural diversity. Parents and community members joined in celebration."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "View Highlights →"
+          }
+        }
+      }
+    },
+    "ongoing-events": {
+      "title": {
+        "type": "textContent",
+        "content": "Ongoing Events"
+      },
+      "description": {
+        "type": "textContent",
+        "content": "These activities are currently taking place at our school. We encourage all students and parents to participate and make the most of these enriching opportunities."
+      },
+      "event1": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Student Art Exhibition"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "March 1-7, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Gallery"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "View artwork created by our talented students across all grades. The exhibition is open to parents and the public from 9:00 AM to 4:00 PM daily."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "Learn More →"
+          }
+        }
+      },
+      "event2": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Annual Book Fair"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "February 28 - March 5, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Library"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Explore thousands of books across various genres and subjects. Special discounts for students. Guest authors will be present for book signings and discussions."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "View Schedule →"
+          }
+        }
+      },
+      "event3": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Coding Challenge Week"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "March 1-8, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "Computer Lab"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Students compete in daily coding challenges to develop problem-solving skills. Open to all grades with age-appropriate tasks. Prizes will be awarded at the closing ceremony."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "Join Challenge →"
+          }
+        }
+      }
+    },
+    "upcoming-events": {
+      "title": {
+        "type": "textContent",
+        "content": "Upcoming Events"
+      },
+      "description": {
+        "type": "textContent",
+        "content": "Mark your calendars for these exciting events planned for the near future. Early registration is encouraged as some events have limited capacity."
+      },
+      "event1": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Science Expedition"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "March 15, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "National Science Museum"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Grades 8-10 will visit the National Science Museum for an educational tour. Permission forms must be signed by parents before March 10th."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "Register Now →"
+          }
+        }
+      },
+      "event2": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Parent-Teacher Conference"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "March 20-21, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Classrooms"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Meet with teachers to discuss your child's academic progress. Schedule appointments online through the parent portal. Time slots available from 8:00 AM to 4:00 PM."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "Schedule Meeting →"
+          }
+        }
+      },
+      "event3": {
+        "type": "object",
+        "content": {
+          "title": {
+            "type": "textContent",
+            "content": "Annual School Day Celebration"
+          },
+          "date": {
+            "type": "textContent",
+            "content": "March 30, 2025"
+          },
+          "location": {
+            "type": "textContent",
+            "content": "School Auditorium"
+          },
+          "description": {
+            "type": "textContent",
+            "content": "Join us for our biggest celebration of the year featuring student performances, award ceremonies, and special guest speakers. All parents and alumni are cordially invited."
+          },
+          "image": {
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "link": {
+            "type": "href",
+            "content": "#"
+          },
+          "link-text": {
+            "type": "textContent",
+            "content": "Get Tickets →"
+          }
+        }
+      }
+    }
+  },
+  "News":{
+    "main-news":{
+      "main-news-image":{
+        "type":"src",
+        "content":"https://placehold.co/800x600"
+      },
+      "main-news-title":{
+        "type":"textContent",
+        "content": "News Headline"
+      },
+      "main-news-description":{
+        "type":"textContent",
+        "content": "News details."
+      },
+      "date":{
+        "type": "textContent",
+        "content": "February 22, 2025"
+      }
+    },
+    "news-cards":{
+      "news-card1":{
+        "type":"object",
+        "content":{
+          "news-image":{
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "news-title":{
+            "type":"textContent",
+            "content": "News Headline"
+          },
+          "news-description":{
+            "type":"textContent",
+            "content": "News details."
+          },
+          "date":{
+            "type":"textContent",
+            "content": "February 22, 2025"
+          }
+        }
+      },
+      "news-card2":{
+        "type":"object",
+        "content":{
+          "news-image":{
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "news-title":{
+            "type":"textContent",
+            "content": "News Headline"
+          },
+          "news-description":{
+            "type":"textContent",
+            "content": "News details."
+          },
+          "date":{
+            "type":"textContent",
+            "content": "February 23, 2025"
+          }
+        }
+      },
+      "news-card3":{
+        "type":"object",
+        "content":{
+          "news-image":{
+            "type": "src",
+            "content": "https://placehold.co/600x400"
+          },
+          "news-title":{
+            "type":"textContent",
+            "content": "News Headline"
+          },
+          "news-description":{
+            "type":"textContent",
+            "content": "News details."
+          },
+          "date":{
+            "type":"textContent",
+            "content": "February 25, 2025"
+          }
+        }
+      }
+    }
+  },
+  "Services":{
+    "card1":{
+      "service-img":{
+        "type":"src",
+        "content": "https://placehold.co/600x400"
+      },
+      "service-title":{
+        "type": "textContent",
+        "content": "Computer Lab"
+      },
+      "service-description":{
+        "type": "textContent",
+        "content": "Our state-of-the-art computer lab is equipped with the latest technology and software. Students have access to high-speed internet and modern computers for research, assignments, and computer science classes."
+      }
+    },
+    "card2":{
+      "service-img":{
+        "type":"src",
+        "content": "https://placehold.co/600x400"
+      },
+      "service-title":{
+        "type": "textContent",
+        "content": "Cafeteria"
+      },
+      "service-description":{
+        "type": "textContent",
+        "content": "The school cafeteria provides nutritious and delicious meals for students and staff. We offer a variety of menu options including vegetarian choices. Our cafeteria focuses on balanced nutrition while maintaining high standards of hygiene."
+      }
+    },
+    "card3":{
+      "service-img":{
+        "type":"src",
+        "content": "https://placehold.co/600x400"
+      },
+      "service-title":{
+        "type": "textContent",
+        "content": "Transportation"
+      },
+      "service-description":{
+        "type": "textContent",
+        "content": "We provide safe and reliable transportation services for students. Our fleet of buses covers various routes throughout the city, ensuring safe commuting with experienced drivers and attendants."
+      }
+    },
+    "card4":{
+      "service-img":{
+        "type":"src",
+        "content": "https://placehold.co/600x400"
+      },
+      "service-title":{
+        "type": "textContent",
+        "content": "Sports Facilities"
+      },
+      "service-description":{
+        "type": "textContent",
+        "content": "Our school offers excellent sports facilities including a playground, basketball court, and indoor games area. We encourage students to participate in sports activities to develop fitness, teamwork, and sportsmanship."
+      }
+    },
+    "card5":{
+      "service-img":{
+        "type":"src",
+        "content": "https://placehold.co/600x400"
+      },
+      "service-title":{
+        "type": "textContent",
+        "content": "Internet Facilities"
+      },
+      "service-description":{
+        "type": "textContent",
+        "content": "The school provides high-speed internet access throughout the campus. Students can access educational resources and learning platforms while maintaining safe and secure browsing standards."
+      }
+    }
+  }
+}
